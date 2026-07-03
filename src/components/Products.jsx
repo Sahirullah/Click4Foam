@@ -41,7 +41,14 @@ function Products() {
               <p className="product-category">{product.category}</p>
               <div className="product-rating">{product.rating}</div>
               <p className="product-discount">Get 30% Discount</p>
-              <button className="btn btn-small">Buy Now</button>
+              <a 
+                href={`https://wa.me/923001234567?text=Hi Click4Foam, I'm interested in ${product.name}. Please provide details and pricing.`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-buy-now"
+              >
+                Buy Now
+              </a>
             </div>
           ))}
         </div>

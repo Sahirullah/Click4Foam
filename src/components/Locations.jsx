@@ -1,27 +1,26 @@
 import '../styles/Locations.css'
 
 function Locations() {
-  const locations = [
-    { id: 1, country: 'Lahore', flag: '🇵🇰', address: 'Plot 45-B, Sector C, DHA Phase 6' },
-    { id: 2, country: 'Karachi', flag: '🇵🇰', address: 'Showroom 12, Main Khalid Bin Waleed Rd' },
-    { id: 3, country: 'Islamabad', flag: '🇵🇰', address: 'Shop 8, G-9 Markaz' },
-    { id: 4, country: 'Peshawar', flag: '🇵🇰', address: 'University Road, Opposite KTH' },
-    { id: 5, country: 'Faisalabad', flag: '🇵🇰', address: 'P-32, Susan Road, Madina Town' },
-    { id: 6, country: 'Multan', flag: '🇵🇰', address: 'Chowk Kumharanwala, Main Multan Road' },
+  const reasons = [
+    { id: 1, icon: '✓', title: 'Premium Quality', description: 'High-grade foam products meeting international standards' },
+    { id: 2, icon: '💰', title: 'Factory Prices', description: 'Direct from manufacturer, best prices guaranteed' },
+    { id: 3, icon: '🚚', title: 'Fast Delivery', description: 'Nationwide delivery within 24-48 hours' },
+    { id: 4, icon: '👥', title: 'Expert Support', description: 'Knowledgeable team ready to help 24/7' },
+    { id: 5, icon: '🔄', title: 'Easy Returns', description: '30-day money-back guarantee on all products' },
+    { id: 6, icon: '⭐', title: '5-Star Rated', description: 'Trusted by thousands of satisfied customers' },
   ]
 
   return (
-    <section className="locations" id="locations">
+    <section className="locations" id="why-choose-us">
       <div className="locations-container">
-        <h2>Our Locations</h2>
-        <p className="locations-subtitle">Visit us around the region</p>
+        <h2>Why Choose Us</h2>
+        <p className="locations-subtitle">Here's what makes Click4Foam the best choice</p>
         <div className="locations-grid">
-          {locations.map((location) => (
-            <div key={location.id} className="location-card">
-              <div className="location-flag">{location.flag}</div>
-              <h3>{location.country}</h3>
-              <p>{location.address}</p>
-              <button className="btn btn-small">Visit Store</button>
+          {reasons.map((reason) => (
+            <div key={reason.id} className="location-card">
+              <div className="location-flag">{reason.icon}</div>
+              <h3>{reason.title}</h3>
+              <p>{reason.description}</p>
             </div>
           ))}
         </div>
