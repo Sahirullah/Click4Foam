@@ -1,11 +1,12 @@
 import '../styles/Navbar.css'
+import logo from '../assets/logo.jpeg'
 
 function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-logo">
-          <span className="logo-icon">🧽</span>
+          <img src={logo} alt="Click4Foam Logo" className="logo-image" />
           <span className="logo-text">Click4Foam</span>
         </div>
         <ul className="navbar-menu">
