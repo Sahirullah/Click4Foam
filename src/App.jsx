@@ -4,6 +4,7 @@ import About from './components/About'
 import Products from './components/Products'
 import Locations from './components/Locations'
 import Reviews from './components/Reviews'
+import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import whatsappBtnImg from './assets/Whatsapp-btn.avif'
@@ -20,6 +21,7 @@ function App() {
       <Products />
       <Locations />
       <Reviews />
+      <Contact />
       <Footer />
       
       <a
